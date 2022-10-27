@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/arnaud
+    driver-class-name: org.postgresql.Driver
+    username: arnaud
+    password: pass
+  jpa:
+    generate-ddl: true
+    show-sql: true
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+    include-exception: false
