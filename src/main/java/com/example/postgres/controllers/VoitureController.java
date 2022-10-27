@@ -58,8 +58,8 @@ public class VoitureController {
     }
 
     @PutMapping("/moveMyVoiture")
-    public Voiture moveMyVoiture(@RequestParam int id, String location){
-        return voitureService.moveMyVoiture(id,location);
+    public Voiture moveMyVoiture(@RequestBody Voiture voiture){
+        return voitureService.moveMyVoiture(voiture);
     }
 
     @GetMapping("/test")

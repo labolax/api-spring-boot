@@ -48,10 +48,11 @@ public class VoitureService {
         return voiture;
     }
 
-    public Voiture moveMyVoiture(int id, String location) {
-        Voiture voiture = findVoitureById(id);
-        apiCheckLocation(location);
-        saveUrl(voiture, location);
+    public Voiture moveMyVoiture(Voiture oldVoiture) {
+        Voiture voiture = findVoitureById(oldVoiture.getId());
+        apiCheckLocation(oldVoiture.getLocation());
+        saveUrl(voiture, oldVoiture.getLocation());
+
         return voiture;
     }
 
