@@ -1,7 +1,6 @@
 package com.example.postgres.BO.entities;
 
 import javax.persistence.*;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 @Entity
